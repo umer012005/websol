@@ -1,5 +1,4 @@
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +12,27 @@
             color: #fff;
             text-align: center;
         }
+        .navbar {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
         .container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: 80px auto 50px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -34,14 +51,45 @@
             font-size: 1.2em;
             line-height: 1.6;
         }
+        .facts {
+            text-align: left;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+        }
+        .facts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .facts li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#facts">BJJ Facts</a>
+    </div>
+    
+    <div class="container" id="about">
         <h1>Mohammed Umer</h1>
         <p>Brazilian Jiu-Jitsu Practitioner | Passionate Grappler</p>
         <img src="pics/GABRIEL_VELLA_vs_ROMINHO_51.jpg" alt="BJJ" class="image">
         <p>Welcome! I'm Mohammed Umer, a passionate practitioner of Brazilian Jiu-Jitsu. BJJ is not just a sport, it's a lifestyle. It teaches discipline, resilience, and the art of leverage. Whether on the mats or in life, I strive to improve every day.</p>
+    </div>
+    
+    <div class="container facts" id="facts">
+        <h2>Interesting Facts About BJJ</h2>
+        <ul>
+            <li>BJJ was developed from Judo in the early 20th century.</li>
+            <li>It focuses on ground fighting and submissions rather than striking.</li>
+            <li>The belt system in BJJ consists of White, Blue, Purple, Brown, and Black belts.</li>
+            <li>BJJ is often referred to as the "gentle art" because it emphasizes technique over brute strength.</li>
+            <li>Many MMA fighters have a strong BJJ background for grappling dominance.</li>
+        </ul>
     </div>
 </body>
 </html>
